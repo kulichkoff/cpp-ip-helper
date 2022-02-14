@@ -20,5 +20,6 @@ std::string IPDistributor::GetClassStr(IPClass ipClass) {
         case IPClass::C: return "C";
         case IPClass::D: return "D";
         case IPClass::E: return "E";
+        default: return "unknown";
     }
 }

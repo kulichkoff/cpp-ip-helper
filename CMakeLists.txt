@@ -3,4 +3,4 @@ project(iphelper)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(iphelper main.cc ip_translator/ip_translator.cc ip_translator/ip_translator.h)
+add_executable(iphelper main.cc ip_translator/ip_translator.cc ip_translator/ip_translator.h ip_distributor/ip_distributor.cc ip_distributor/ip_distributor.h)

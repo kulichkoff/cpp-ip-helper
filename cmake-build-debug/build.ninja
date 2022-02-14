@@ -72,17 +72,23 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_iphelper: phony || CMakeFiles/iphelper.dir
 
-build CMakeFiles/iphelper.dir/main.cpp.o: CXX_COMPILER__iphelper_Debug /home/kylich/projects/iphelper/main.cpp || cmake_object_order_depends_target_iphelper
-  DEP_FILE = CMakeFiles/iphelper.dir/main.cpp.o.d
+build CMakeFiles/iphelper.dir/main.cc.o: CXX_COMPILER__iphelper_Debug /home/kylich/projects/iphelper/main.cc || cmake_object_order_depends_target_iphelper
+  DEP_FILE = CMakeFiles/iphelper.dir/main.cc.o.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/iphelper.dir
   OBJECT_FILE_DIR = CMakeFiles/iphelper.dir
 
-build CMakeFiles/iphelper.dir/IPTranslator/IPTranslator.cpp.o: CXX_COMPILER__iphelper_Debug /home/kylich/projects/iphelper/IPTranslator/IPTranslator.cpp || cmake_object_order_depends_target_iphelper
-  DEP_FILE = CMakeFiles/iphelper.dir/IPTranslator/IPTranslator.cpp.o.d
+build CMakeFiles/iphelper.dir/ip_translator/ip_translator.cc.o: CXX_COMPILER__iphelper_Debug /home/kylich/projects/iphelper/ip_translator/ip_translator.cc || cmake_object_order_depends_target_iphelper
+  DEP_FILE = CMakeFiles/iphelper.dir/ip_translator/ip_translator.cc.o.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/iphelper.dir
-  OBJECT_FILE_DIR = CMakeFiles/iphelper.dir/IPTranslator
+  OBJECT_FILE_DIR = CMakeFiles/iphelper.dir/ip_translator
+
+build CMakeFiles/iphelper.dir/ip_distributor/ip_distributor.cc.o: CXX_COMPILER__iphelper_Debug /home/kylich/projects/iphelper/ip_distributor/ip_distributor.cc || cmake_object_order_depends_target_iphelper
+  DEP_FILE = CMakeFiles/iphelper.dir/ip_distributor/ip_distributor.cc.o.d
+  FLAGS = -g -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/iphelper.dir
+  OBJECT_FILE_DIR = CMakeFiles/iphelper.dir/ip_distributor
 
 
 # =============================================================================
@@ -92,7 +98,7 @@ build CMakeFiles/iphelper.dir/IPTranslator/IPTranslator.cpp.o: CXX_COMPILER__iph
 #############################################
 # Link the executable iphelper
 
-build iphelper: CXX_EXECUTABLE_LINKER__iphelper_Debug CMakeFiles/iphelper.dir/main.cpp.o CMakeFiles/iphelper.dir/IPTranslator/IPTranslator.cpp.o
+build iphelper: CXX_EXECUTABLE_LINKER__iphelper_Debug CMakeFiles/iphelper.dir/main.cc.o CMakeFiles/iphelper.dir/ip_translator/ip_translator.cc.o CMakeFiles/iphelper.dir/ip_distributor/ip_distributor.cc.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/iphelper.dir
   POST_BUILD = :

@@ -1,20 +1,14 @@
 #include <iostream>
 
 #include "ip_translator/ip_translator.h"
+#include "ip_distributor/ip_distributor.h"
 
 int main(int argc, char *argv[])
 {
-    std::string ip = "192.168.0.1";
-    std::string *stringVector = IPTranslator::Split(ip);
+    std::string ip = "10.168.0.1";
     std::string binIP = IPTranslator::TranslateToBin(ip);
-
-    for (int i = 0; i < 4; i++)
-    {
-        std::cout << stringVector[i] << std::endl;
-    }
-
-    std::cout << binIP << std::endl;
-
-    delete[] stringVector;
+    std::cout << binIP << "\n";
+    IPClass ipClass = IPDistributor::GetClass(binIP);
+    std::cout << IPDistributor::GetClassStr(ipClass) << "\n";
     return 0;
 }

@@ -2,11 +2,10 @@
 // Created by kylich on 14.02.2022.
 //
 
-#include <string>
-
 #ifndef IPHELPER_IPTRANSLATOR_H
 #define IPHELPER_IPTRANSLATOR_H
 
+#include <string>
 
 class IPTranslator {
 public:

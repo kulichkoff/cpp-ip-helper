@@ -9,8 +9,8 @@
 
 class IPTranslator {
 public:
-    static std::string TranslateToBin(std::string &ipAddress);
-    static std::string *Split(std::string &ipAddress);
+  static std::string TranslateToBin(std::string &ip_address);
+  static std::string *Split(std::string &ip_address);
 };
 
-#endif //IPHELPER_IPTRANSLATOR_H
+#endif//IPHELPER_IPTRANSLATOR_H

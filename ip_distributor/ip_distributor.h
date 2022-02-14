@@ -7,13 +7,12 @@
 
 #include <string>
 
-enum class IPClass { A, B, C, D, E };
+enum class IPClass { kA, kB, kC, kD, kE };
 
 class IPDistributor {
-public:
-    static IPClass GetClass(std::string &binaryIP);
-    static std::string GetClassStr(IPClass ipClass);
+ public:
+  static IPClass GetClass(std::string &binary_ip);
+  static std::string GetClassStr(IPClass ip_class);
 };
 
-
-#endif //IPHELPER_IP_DISTRIBUTOR_H
+#endif  // IPHELPER_IP_DISTRIBUTOR_H

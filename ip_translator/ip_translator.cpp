@@ -4,13 +4,13 @@
 
 #include <bitset>
 
-#include "IPTranslator.h"
+#include "ip_translator.h"
 
 
-std::string IPTranslator::translateToBin(std::string &ipAddress)
+std::string IPTranslator::TranslateToBin(std::string &ipAddress)
 {
     std::string binIP;
-    std::string* octets = IPTranslator::split(ipAddress);
+    std::string* octets = IPTranslator::Split(ipAddress);
 
     for (int i = 0; i < 4; i++)
     {
@@ -23,7 +23,7 @@ std::string IPTranslator::translateToBin(std::string &ipAddress)
     return binIP;
 }
 
-std::string *IPTranslator::split(std::string &ipAddress)
+std::string *IPTranslator::Split(std::string &ipAddress)
 {
     std::string ipCopy = ipAddress;
     std::string delimiter = ".";

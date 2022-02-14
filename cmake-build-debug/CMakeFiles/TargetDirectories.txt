@@ -1,0 +1,3 @@
+/home/kylich/projects/iphelper/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kylich/projects/iphelper/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kylich/projects/iphelper/cmake-build-debug/CMakeFiles/iphelper.dir
